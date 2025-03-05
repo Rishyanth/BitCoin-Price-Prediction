@@ -13,23 +13,25 @@ const Testimonials: React.FC = () => {
     {
       quote:
         "The transformer-based prediction model has significantly improved our trading strategy. The 96% direction accuracy for short-term predictions is remarkable.",
-      author: "Alex Chen",
+      author: "Sri Lakshmi",
       role: "Crypto Fund Manager",
-      avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=alex",
+      avatar:
+        "https://api.dicebear.com/7.x/avataaars/svg?seed=srilakshmi&gender=female",
     },
     {
       quote:
         "I've tried many prediction tools, but this platform's ensemble approach combining multiple models provides the most reliable forecasts I've seen.",
-      author: "Sarah Johnson",
+      author: "Ram",
       role: "Day Trader",
-      avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=sarah",
+      avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=ram&gender=male",
     },
     {
       quote:
         "The sentiment analysis feature is a game-changer. Being able to see how market sentiment affects price predictions gives me an edge in volatile markets.",
-      author: "Michael Rodriguez",
+      author: "Manikanta Reddy",
       role: "Blockchain Analyst",
-      avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=michael",
+      avatar:
+        "https://api.dicebear.com/7.x/avataaars/svg?seed=manikanta&gender=male",
     },
   ];
 
