@@ -1,30 +1,90 @@
-# React + TypeScript + Vite
+# Cryptocurrency Price Prediction Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A comprehensive dashboard that displays real-time cryptocurrency price data alongside ML-powered price predictions for Bitcoin and Ethereum, featuring interactive charts and customizable prediction parameters.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Real-time cryptocurrency price data from CoinGecko API
+- Interactive historical price charts with zoom/pan capabilities
+- Price predictions for 1-day, 7-day, and 30-day timeframes
+- Confidence intervals and accuracy metrics for predictions
+- Customizable model parameters
+- Dark/light mode toggle
+- Export predictions to CSV
+- Model performance metrics and comparison
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React + TypeScript
+- Vite
+- Tailwind CSS
+- Recharts for data visualization
+- ShadCN UI components
 
-- Configure the top-level `parserOptions` property like this:
+## Prerequisites
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- Node.js (v16 or higher)
+- npm or yarn
+
+## Installation
+
+1. Clone the repository
+
+```bash
+git clone <repository-url>
+cd cryptocurrency-prediction-dashboard
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Install dependencies
+
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Start the development server
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+4. Open your browser and navigate to `http://localhost:5173`
+
+## Project Structure
+
+- `src/components/dashboard/` - Dashboard components (Header, PriceDisplay, PriceChart, etc.)
+- `src/components/landing/` - Landing page components
+- `src/components/ui/` - UI components from ShadCN
+- `src/lib/` - Utility functions, API calls, and prediction models
+- `src/pages/` - Main pages of the application
+
+## API Integration
+
+The application uses the CoinGecko API to fetch real-time cryptocurrency data. No API key is required for basic usage.
+
+## Prediction Models
+
+The application uses an ensemble of models for price prediction:
+
+- Transformer Neural Network
+- Random Forest
+- XGBoost
+- VADER Sentiment Analysis
+- BERT NLP
+
+## Building for Production
+
+```bash
+npm run build
+# or
+yarn build
+```
+
+The build artifacts will be stored in the `dist/` directory.
+
+## License
+
+MIT
